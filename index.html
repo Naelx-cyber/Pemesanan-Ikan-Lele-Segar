@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Ikan Lele</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pemesanan Ikan Lele</h1>
+        <form id="orderForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+
+            <label for="quantity">Jumlah (kg):</label>
+            <input type="number" id="quantity" required>
+
+            <p>Harga: <strong>22.000 IDR / kg</strong></p> <!-- Menambahkan informasi harga -->
+            
+            <button type="submit">Pesan</button>
+        </form>
+        <div id="notification" class="notification hidden"></div>
+        
+        <h2>Daftar Pesanan</h2>
+        <ul id="orderList"></ul>
+
+        <!-- Menambahkan informasi kontak -->
+        <div class="contact-info">
+            <h3>Kontak Kami</h3>
+            <p>Untuk informasi lebih lanjut, hubungi kami di WhatsApp: <a href="https://wa.me/6283138470584" target="_blank">Klik Disini</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
